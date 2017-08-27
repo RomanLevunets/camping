@@ -60,7 +60,7 @@
 
 .header {
   position: relative;
-  z-index: 10; }
+  z-index: 1; }
   .header-logo img {
     width: 100%;
     height: auto;
@@ -1255,3 +1255,232 @@ a:hover {
     -webkit-transition: .3s linear;
     -o-transition: .3s linear;
     transition: .3s linear; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .header-call-item:first-child {
+    padding-right: 17px; }
+    .header-call-item:first-child::after {
+      right: 6px; }
+  .feedback {
+    width: 45%;
+    float: left; }
+  .downloadPrice {
+    width: 55%;
+    float: right; }
+  .social {
+    width: 55%;
+    float: right; }
+  .address {
+    position: relative; } }
+
+/**/
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .header-call {
+    text-align: right; }
+    .header-call-item:first-child {
+      padding-right: 0; }
+    .header-call-item::after {
+      display: none; }
+  .section-header::after {
+    display: none; }
+  .slider {
+    margin-left: 0; } }
+
+/**/
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .aside-left {
+    width: 50%; }
+  .aside-right {
+    width: 50%; }
+  .feedback {
+    width: 50%;
+    float: left; }
+  .downloadPrice {
+    width: 50%;
+    float: right; }
+  .social {
+    width: 50%;
+    float: right; }
+  .order-item {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto; }
+  .order-item:nth-child(4) {
+    border: none; }
+    .order-item:nth-child(4)::before {
+      display: none; }
+    .order-item:nth-child(4)::after {
+      display: none; }
+  .order-item:nth-child(5) {
+    border: none; }
+    .order-item:nth-child(5)::before {
+      display: none; }
+    .order-item:nth-child(5)::after {
+      display: none; }
+  .order-item:nth-child(6) {
+    border: none; }
+    .order-item:nth-child(6)::before {
+      display: none; }
+    .order-item:nth-child(6)::after {
+      display: none; }
+  .options-item {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto; }
+  .content {
+    padding-top: 5px; }
+    .content h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 20px; }
+    .content p {
+      font-size: 14px;
+      margin-bottom: 15px; }
+    .content h4 {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 15px; }
+  .options-item > p {
+    font-size: 24px; }
+  .main h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px; }
+  .slider-item h1 {
+    width: 100%;
+    font-size: 27px; }
+  .slider-item p {
+    font-size: 15px; }
+  .info-company p {
+    font-size: 16px; }
+  .address-town p {
+    font-size: 20px; }
+  .address-mail {
+    font-size: 14px; }
+  .order-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 200px; }
+    .order-item h4 {
+      margin-top: 0;
+      margin-bottom: 0; }
+  .order-item span {
+    bottom: 90px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 520px) {
+  .header-call {
+    padding-right: 15px;
+    padding-left: 0;
+    padding-top: 10px; }
+    .header-call-item {
+      font-size: 15px; }
+  .header-logo img {
+    max-width: 100px; }
+  .feedback {
+    width: 100%;
+    padding-bottom: 15px; }
+    .feedback p {
+      font-size: 18px;
+      margin-bottom: 5px; }
+    .feedback span {
+      font-size: 12px; }
+  .downloadPrice p {
+    font-size: 18px; }
+  .downloadPrice a {
+    font-size: 16px; }
+  .content-blockImg {
+    padding: 10px; }
+  .content-img {
+    height: 200px; }
+  .options-item > p {
+    font-size: 18px; }
+  .options-item span {
+    font-size: 12px; }
+  .info-logo {
+    width: 100%; }
+  .info-company p {
+    display: block;
+    padding-top: 10px;
+    font-size: 13px; }
+  .address-town {
+    width: 100%; }
+    .address-town p {
+      font-size: 16px; }
+  .address-phone {
+    width: 100%; }
+    .address-phone a {
+      font-size: 16px; }
+  .address-mail {
+    margin-top: 10px; }
+  .address {
+    padding: 15px; }
+  .info-company {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .feedback-form-name, .feedback-form-email, .feedback-form-phone, .feedback-form-message, .feedback-form-email, .feedback-form-phone, .feedback-form-message {
+    font-size: 13px; }
+  .input-check label {
+    font-size: 13px; }
+  .feedback-form-send {
+    font-size: 16px; }
+  .downloadPrice {
+    width: 100%;
+    float: right; }
+  .social {
+    width: 100%;
+    float: right; }
+  .slider-item h1 {
+    padding-top: 20px;
+    font-size: 17px; }
+    .slider-item h1 span {
+      font-size: 17px; }
+  .slider-item p {
+    width: 100%;
+    right: 0;
+    max-width: 100%;
+    padding: 15px; }
+  .slick-dots {
+    display: none; }
+  .slider-item {
+    min-height: 315px; }
+  .links li a {
+    font-size: 12px; }
+  .main h2 {
+    font-size: 20px; }
+  .content h3 {
+    font-size: 17px; }
+  .content p {
+    font-size: 12px; }
+  .content h4 {
+    font-size: 15px; }
+  .siteMenu li a {
+    font-size: 13px;
+    padding: 10px 5px 10px 10px; }
+  .siteMenu li.active a {
+    font-size: 13px; }
+  .mainMenu li a {
+    font-size: 13px;
+    padding: 10px 5px 10px 10px; }
+  .mainMenu li.active a {
+    font-size: 13px; } }
+
+/**/
+/* Custom, iPhone Retina */
+/**/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/**/
+/* Extra Small Devices, Phones */
+/**/
+/* Small Devices, Tablets */
+/**/
+/* Medium Devices, Desktops */
+/**/
+/* Large Devices, Wide Screens */
+/**/
