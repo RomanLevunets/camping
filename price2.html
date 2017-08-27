@@ -38,7 +38,7 @@
     <section class="section-main">
         <div class="container">
             <div class="row">
-                <aside class="col-lg-4 aside">
+                <aside class="col-lg-4 clearfix aside">
                     <div class="aside-tabs clearfix">
                         <nav class="aside-left">
                             <ul class="siteMenu">
@@ -51,62 +51,38 @@
                         </nav>
                         <div class="aside-right">
                             <ul class="mainMenu">
-                                <li class="active"><a href="#">Пошив тентов</a></li>
-                                <li><a href="#">Безузловые дели</a></li>
-                                <li><a href="#">Пошив спецодежды, форменной одежды</a></li>
-                                <li><a href="#">Пошив штор</a></li>
-                                <li><a href="#">Пошив текстильных изделий для ресторанов, баров, гостиниц</a></li>
-                                <li><a href="#">Пошив чехлов на автомобили, мягкую мебель</a></li>
-                                <li><a href="#">Пошив и разработка дизайна карнавальных костюмов</a></li>
-                                <li><a href="#">Пошив и разработка дизайна одежды для животных</a></li>
-                                <li><a href="#">Пошив и разработка дизайна одежды для командных соревнований</a></li>
-                                <li><a href="#">Индивидуальный пошив</a></li>
-                                <li><a href="#">Разработка моделей и конструирование лекал</a></li>
-                                <li><a href="#">Индивидуальный подбор материалов</a></li>
+                                <li><a href="#">Укрывные тенты, технические шторы </a></li>
+                                <li class="active"><a href="#">Безузловая дель</a></li>
+                                <li><a href="#">Услуги пошива</a></li>
+                                <li><a href="#">Услуги разработки дизайна и конструирование лекал</a></li>
+                                <li><a href="#">Подбор материалов</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="news">
-                        <a href="#" class="news-img">
-                            <p class="news-img-title">Новости</p>
-                            <p class="news-img-date">29<span>/07</span></p>
-                        </a>
-                        <div class="news-txt">
-                            <ul class="news-item">
-                                <li>
-                                    <p class="news-item-title">Задача организации</p>
-                                    <p class="news-item-txt">Разнообразный и богатый опыт консультация с широким активом
-                                        обеспечивает широкому кругу (специалистов) участие в формировании новых
-                                        предложений.</p>
-                                    <a href="#" class="news-item-link">Подробнее</a>
-
-                                </li>
-                                <li>
-                                    <p class="news-item-date">10 сентября 2017</p>
-                                    <p class="news-item-title">Равным образом рамки</p>
-                                    <p class="news-item-txt">Таким образом реализация намеченных плановых заданий влечет
-                                        за собой процесс внедрения и модернизации форм развития. Повседневная практика
-                                        показывает, что новая модель организационной деятельности способствует
-                                        подготовки и реализации модели развития.</p>
-                                </li>
-                                <li>
-                                    <p class="news-item-date">10 сентября 2017</p>
-                                    <p class="news-item-title">Повседневная практика</p>
-                                    <p class="news-item-txt">Разнообразный и богатый опыт консультация с широким активом
-                                        обеспечивает широкому кругу (специалистов) участие в формировании новых
-                                        предложений.</p>
-                                </li>
-                                <li>
-                                    <p class="news-item-date">10 сентября 2017</p>
-                                    <p class="news-item-title">Финансовые условия</p>
-                                    <p class="news-item-txt">Товарищи! консультация с широким активом влечет за собой
-                                        процесс внедрения и модернизации дальнейших направлений развития.</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="news-item-link">Подробнее</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="feedback">
+                        <p>Возникли вопросы?</p>
+                        <span>Оставьте сообщение и мы Вам ответим:</span>
+                        <form action="/" class="feedback-form">
+                            <input type="text" name="name" placeholder="Ваше имя" class="feedback-form-name" required>
+                            <input type="email" name="email" placeholder="Ваш e-mail" class="feedback-form-email"
+                                   required>
+                            <input type="text" name="phone" placeholder="Ваш телефон" class="feedback-form-phone"
+                                   required>
+                            <textarea name="message" placeholder="Текст сообщения" class="feedback-form-message"
+                                      required></textarea>
+                            <div class="input-check">
+                                <input type="checkbox" name="checkbox" class="feedback-form-checkbox" id="checkbox"
+                                       required>
+                                <label for="checkbox" class="feedback-form-check">Я выражаю свое согласие
+                                    на обработку персональных данных</label>
+                            </div>
+                            <input type="submit" name="send" value="Отправить" class="feedback-form-send">
+                        </form>
+                    </div>
+                    <div class="downloadPrice">
+                        <p>Наши цены</p>
+                        <span>Документ Adobe Acrobat *.pdf (106 КБ)</span>
+                        <a href="#">скачать</a>
                     </div>
                     <div class="social">
                         <ul class="socialIcon">
@@ -118,136 +94,104 @@
                     </div>
                 </aside>
                 <div class="main col-lg-8">
-                    <div class="slider">
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                    </div>
                     <ul class="links">
                         <li><a href="#">Главная</a></li>
-                        <li><a href="#">Наше производство</a></li>
+                        <li><a href="#">Цены на сетевое полотно</a></li>
+                        <li><a href="#">Стоимость дели </a></li>
                     </ul>
-                    <h2 class="main-ttu">Наше<br>
-                        <p>производство</p></h2>
+                    <div class="next">
+                        <a href="#" class="next-state">
+                            <p>следующая статья</p>
+                            <span>Цена садка для выращивания рыбы</span>
+                        </a>
+                    </div>
+                    <h2>Стоимость дели</h2>
                     <div class="content">
-                        <h3>Разнообразный и богатый опыт и место обучения кадров</h3>
-                        <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности
-                            позволяет оценить значение соответствующий условий активизации. Повседневная практика
-                            показывает, что сложившаяся структура организации в значительной степени обуславливает
-                            создание существенных финансовых и административных условий.</p>
-                        <a href="#">Подробнее</a>
+                        <div class="content-warning">
+                            <h3>Внимание!</h3>
+                            <p>Cтоимость дели может измениться. Наиболее актуальная информация по запросу у менеджеров компании по телефону +7 (495) 223-06-08 или по
+                                <a href="#">e-mail</a>.
+                                Продажа делей безузловых осуществляется в килограммах.</p>
+                            <a href="#" class="content-warning-link">Подробнее</a>
+                        </div>
                     </div>
                     <div class="content">
-                        <h3>Идейные соображения высшего порядка</h3>
-                    </div>
-                    <div class="block row">
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item4.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Тенты и палатки</h5>
-                                <p>Равным образом выбранный нами инновационный путь требует определения и уточнения
-                                    ключевых компонентов планируемого обновления? Задача организации, в особенности же
-                                    дальнейшее развитие различных форм деятельности. </p>
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item5.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Установка и монтаж</h5>
-                                <p>Товарищи! консультация с широким активом способствует подготовки и реализации
-                                    дальнейших направлений развития. Равным образом начало повседневной работы позволяет
-                                    оценить значение систем массового участия.</p>
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item3.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Консультация</h5>
-                                <p>Задача организации, в особенности же новая модель организационной деятельности влечет
-                                    за собой процесс внедрения и модернизации системы обучения кадров, соответствует
-                                    насущным потребностям.</p>
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item6.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Консультация</h5>
-                                <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей
-                                    деятельности способствует подготовки и реализации новых предложений. </p>
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item7.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Консультация</h5>
-                                <p>Не следует, однако забывать, что рамки и место обучения кадров требуют от нас анализа
-                                    новых предложений. Идейные соображения высшего порядка, а также сложившаяся
-                                    структура организации играет важную роль в формировании условий активизации.</p>
-                                <a href="#">Подробнее</a>
-                            </div>
+                        <h3>Прайс на безузловую дель из полиамида, полиэфира.
+                            Дель неокрашенная. ТУ-5225-001-651892-2011</h3>
+                        <div class="content-table">
+                            <table>
+                                <tr><th>Структура нитки,<br> текс</th><th>Размер ячеи дели,<br> мм</th><th>Максимальное кол-во ячей по высоте дели</th><th>Цена сетки дели с НДС за 1 кг/руб</th></tr>
+                                <tr><td>187 tex * 3</td><td>от 10 мм до 20 мм</td><td>492</td><td>471</td></tr>
+                                <tr><td>187 tex * 4</td><td>от 15 мм до 20 мм</td><td>492</td><td>471</td></tr>
+                                <tr><td>187 tex * 5</td><td>от 10 мм до 25 мм</td><td>492</td><td>471</td></tr>
+                                <tr><td>187 tex * 6</td><td>от 20 мм до 20 мм</td><td>492</td><td>471</td></tr>
+                            </table>
+                            <p>Цена на сетку дель действительна с 01.08.2015г.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <ul class="gallery1">
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo1.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo1.jpg" alt="gallery1-1">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo2.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo2.jpg" alt="gallery1-2">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo3.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo3.jpg" alt="gallery1-3">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo4.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo4.jpg" alt="gallery1-4">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo5.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo5.jpg" alt="gallery1-5">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clients">
-                        <div class="content">
-                            <h3>Наши клиенты:</h3>
+                    <div class="content">
+                        <div class="content-warning">
+                            <a href="#" class="content-warning-link">Что означатет маркировка ТЕКС</a>
                         </div>
-                        <img src="img/clients.png" alt="clients">
+                    </div>
+                    <div class="content">
+                        <h3>Заказ на изготовление происходит следующим образом:</h3>
+                        <div class="order clearfix row">
+                            <div class="order-item col-lg-4">
+                                <h4>Заказчик озвучивает желания</h4>
+                                <p>по телефону
+                                    <a href="#">8-495 -218-1983</a>
+                                    или по e-mail
+                                    <a href="#">opt@prof-camping.ru</a></p>
+                                <span>01</span>
+                            </div>
+                            <div class="order-item col-lg-4">
+                                <h4>Мы высылаем Заказчику смету</h4>
+                                <p>Образец отправляется курьерской службой, что позволяет в короткие сроки (2-3 дня) получить образец;</p>
+                                <span>02</span>
+                            </div>
+                            <div class="order-item col-lg-4">
+                                <h4>Разрабатывается 3D-модель, согласно техническому заданию Заказчика</h4>
+                                <span>03</span>
+                            </div>
+                            <div class="order-item col-lg-4">
+                                <h4>Заключается
+                                    договор и
+                                    выставляется счет
+                                    на оплату продукции</h4>
+                                <span>04</span>
+                            </div>
+                            <div class="order-item col-lg-4">
+                                <h4>Осуществляется
+                                    изготовление
+                                    согласно
+                                    подготовленной
+                                    ранее 3D-модели</h4>
+                                <span>05</span>
+                            </div>
+                            <div class="order-item col-lg-4">
+                                <h4>Заказ доставляется
+                                    к Заказчику
+                                    транспортной
+                                    компанией в короткие
+                                    сроки.</h4>
+                                <span>06</span>
+                            </div>
+                        </div>
+                        <p>Вы в любой момент можете заполнить форму обратной связи и наши менеджеры подготовят лучшее предложение для Вас.</p>
+                    </div>
+                    <div class="content">
+                        <div class="content-delivery">
+                            <h3>Оплата и доставка:</h3>
+                            <p>Бесплатная доставка по Москве и МО</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <a href="#" class="next-state">
+                            <p>следующая статья</p>
+                            <span>Цена садка для выращивания рыбы</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -287,3 +231,4 @@
 <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
+

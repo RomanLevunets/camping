@@ -38,7 +38,7 @@
     <section class="section-main">
         <div class="container">
             <div class="row">
-                <aside class="col-lg-4 aside">
+                <aside class="col-lg-4 clearfix aside">
                     <div class="aside-tabs clearfix">
                         <nav class="aside-left">
                             <ul class="siteMenu">
@@ -51,62 +51,38 @@
                         </nav>
                         <div class="aside-right">
                             <ul class="mainMenu">
-                                <li class="active"><a href="#">Пошив тентов</a></li>
-                                <li><a href="#">Безузловые дели</a></li>
-                                <li><a href="#">Пошив спецодежды, форменной одежды</a></li>
-                                <li><a href="#">Пошив штор</a></li>
-                                <li><a href="#">Пошив текстильных изделий для ресторанов, баров, гостиниц</a></li>
-                                <li><a href="#">Пошив чехлов на автомобили, мягкую мебель</a></li>
-                                <li><a href="#">Пошив и разработка дизайна карнавальных костюмов</a></li>
-                                <li><a href="#">Пошив и разработка дизайна одежды для животных</a></li>
-                                <li><a href="#">Пошив и разработка дизайна одежды для командных соревнований</a></li>
-                                <li><a href="#">Индивидуальный пошив</a></li>
-                                <li><a href="#">Разработка моделей и конструирование лекал</a></li>
-                                <li><a href="#">Индивидуальный подбор материалов</a></li>
+                                <li><a href="#">Все альбомы</a></li>
+                                <li class="active"><a href="#">Тенты</a></li>
+                                <li><a href="#">Спецодежда</a></li>
+                                <li><a href="#">Рюкзаки</a></li>
+                                <li><a href="#">Пошив в деталях</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="news">
-                        <a href="#" class="news-img">
-                            <p class="news-img-title">Новости</p>
-                            <p class="news-img-date">29<span>/07</span></p>
-                        </a>
-                        <div class="news-txt">
-                            <ul class="news-item">
-                                <li>
-                                    <p class="news-item-title">Задача организации</p>
-                                    <p class="news-item-txt">Разнообразный и богатый опыт консультация с широким активом
-                                        обеспечивает широкому кругу (специалистов) участие в формировании новых
-                                        предложений.</p>
-                                    <a href="#" class="news-item-link">Подробнее</a>
-
-                                </li>
-                                <li>
-                                    <p class="news-item-date">10 сентября 2017</p>
-                                    <p class="news-item-title">Равным образом рамки</p>
-                                    <p class="news-item-txt">Таким образом реализация намеченных плановых заданий влечет
-                                        за собой процесс внедрения и модернизации форм развития. Повседневная практика
-                                        показывает, что новая модель организационной деятельности способствует
-                                        подготовки и реализации модели развития.</p>
-                                </li>
-                                <li>
-                                    <p class="news-item-date">10 сентября 2017</p>
-                                    <p class="news-item-title">Повседневная практика</p>
-                                    <p class="news-item-txt">Разнообразный и богатый опыт консультация с широким активом
-                                        обеспечивает широкому кругу (специалистов) участие в формировании новых
-                                        предложений.</p>
-                                </li>
-                                <li>
-                                    <p class="news-item-date">10 сентября 2017</p>
-                                    <p class="news-item-title">Финансовые условия</p>
-                                    <p class="news-item-txt">Товарищи! консультация с широким активом влечет за собой
-                                        процесс внедрения и модернизации дальнейших направлений развития.</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="news-item-link">Подробнее</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="feedback">
+                        <p>Возникли вопросы?</p>
+                        <span>Оставьте сообщение и мы Вам ответим:</span>
+                        <form action="/" class="feedback-form">
+                            <input type="text" name="name" placeholder="Ваше имя" class="feedback-form-name" required>
+                            <input type="email" name="email" placeholder="Ваш e-mail" class="feedback-form-email"
+                                   required>
+                            <input type="text" name="phone" placeholder="Ваш телефон" class="feedback-form-phone"
+                                   required>
+                            <textarea name="message" placeholder="Текст сообщения" class="feedback-form-message"
+                                      required></textarea>
+                            <div class="input-check">
+                                <input type="checkbox" name="checkbox" class="feedback-form-checkbox" id="checkbox"
+                                       required>
+                                <label for="checkbox" class="feedback-form-check">Я выражаю свое согласие
+                                    на обработку персональных данных</label>
+                            </div>
+                            <input type="submit" name="send" value="Отправить" class="feedback-form-send">
+                        </form>
+                    </div>
+                    <div class="downloadPrice">
+                        <p>Наши цены</p>
+                        <span>Документ Adobe Acrobat *.pdf (106 КБ)</span>
+                        <a href="#">скачать</a>
                     </div>
                     <div class="social">
                         <ul class="socialIcon">
@@ -118,137 +94,95 @@
                     </div>
                 </aside>
                 <div class="main col-lg-8">
-                    <div class="slider">
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                        <div class="slider-item" style="background-image: url('img/photo-slider-main2/photo1.jpg');">
-                            <h1 class="slider-item-title"><span>Чехлы на автомобили</span></h1>
-                            <p class="slider-item-txt">Как приобрести чехлы для автомобилей оптом</p>
-                        </div>
-                    </div>
                     <ul class="links">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Наше производство</a></li>
                     </ul>
-                    <h2 class="main-ttu">Наше<br>
-                        <p>производство</p></h2>
-                    <div class="content">
-                        <h3>Разнообразный и богатый опыт и место обучения кадров</h3>
-                        <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности
-                            позволяет оценить значение соответствующий условий активизации. Повседневная практика
-                            показывает, что сложившаяся структура организации в значительной степени обуславливает
-                            создание существенных финансовых и административных условий.</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                    <div class="content">
-                        <h3>Идейные соображения высшего порядка</h3>
-                    </div>
-                    <div class="block row">
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item4.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Тенты и палатки</h5>
-                                <p>Равным образом выбранный нами инновационный путь требует определения и уточнения
-                                    ключевых компонентов планируемого обновления? Задача организации, в особенности же
-                                    дальнейшее развитие различных форм деятельности. </p>
-                                <a href="#">Подробнее</a>
+                    <h2>Галерея</h2>
+                    <ul class="pagination">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                    <div class="gallery2">
+                        <div class="row row1">
+                            <a href="img/gallery2/photo-7-1.jpg" class="col-lg-7 row1-md" rel="group1" data-fancybox="image"
+                               data-caption="Здесь может быть описание...">
+                                <img src="img/gallery2/photo-7-1.jpg" alt="photo-7-1">
+                            </a>
+                            <div class="col-lg-5 row1-sm">
+                                <div class="row1-xs clearfix">
+                                    <div class="row1-xs-item" style="background-image: url('img/gallery2/photo-3-1.jpg');">
+                                        <a href="#" class="row1-xs-hover">
+                                            <p>Рюкзаки туристические</p>
+                                            <span>Подробнее</span>
+                                        </a>
+                                    </div>
+                                    <div class="row1-xs-item" style="background-image: url('img/gallery2/photo-3-2.jpg');">
+                                        <a href="#" class="row1-xs-hover">
+                                            <p>Рюкзаки туристические</p>
+                                            <span>Подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="img/gallery2/photo-5-1.jpg" class="row1-sm-item" rel="group1" data-fancybox="image"
+                                   data-caption="Здесь может быть описание...">
+                                    <img src="img/gallery2/photo-5-1.jpg" alt="photo-5-1">
+                                </a>
                             </div>
                         </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item5.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Установка и монтаж</h5>
-                                <p>Товарищи! консультация с широким активом способствует подготовки и реализации
-                                    дальнейших направлений развития. Равным образом начало повседневной работы позволяет
-                                    оценить значение систем массового участия.</p>
-                                <a href="#">Подробнее</a>
+                        <div class="row row1">
+                            <a href="img/gallery2/photo-7-2.jpg" class="col-lg-7 row1-md" rel="group1" data-fancybox="image"
+                               data-caption="Здесь может быть описание...">
+                                <img src="img/gallery2/photo-7-2.jpg" alt="photo-7-2">
+                            </a>
+                            <div class="col-lg-5 row1-sm">
+                                <a href="img/gallery2/photo-5-2.jpg" class="row1-sm-item" rel="group1" data-fancybox="image"
+                                   data-caption="Здесь может быть описание...">
+                                    <img src="img/gallery2/photo-5-2.jpg" alt="photo-5-2">
+                                </a>
+                                <a href="img/gallery2/photo-5-3.jpg" class="row1-sm-item" rel="group1" data-fancybox="image"
+                                   data-caption="Здесь может быть описание...">
+                                    <img src="img/gallery2/photo-5-3.jpg" alt="photo-5-3">
+                                </a>
                             </div>
                         </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item3.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Консультация</h5>
-                                <p>Задача организации, в особенности же новая модель организационной деятельности влечет
-                                    за собой процесс внедрения и модернизации системы обучения кадров, соответствует
-                                    насущным потребностям.</p>
-                                <a href="#">Подробнее</a>
+                        <div class="row row3">
+                            <a href="img/gallery2/photo-7-3.jpg" class="col-lg-7 row3-md" rel="group1" data-fancybox="image"
+                               data-caption="Здесь может быть описание...">
+                                <img src="img/gallery2/photo-7-3.jpg" alt="photo-7-3">
+                            </a>
+                            <div class="col-lg-5 row1-sm">
+                                <div class="row1-xs clearfix">
+                                    <div class="row1-xs-item" style="background-image: url('img/gallery2/photo-3-3.jpg');">
+                                        <a href="#" class="row1-xs-hover">
+                                            <p>Рюкзаки туристические</p>
+                                            <span>Подробнее</span>
+                                        </a>
+                                    </div>
+                                    <div class="row1-xs-item" style="background-image: url('img/gallery2/photo-3-4.jpg');">
+                                        <a href="#" class="row1-xs-hover">
+                                            <p>Рюкзаки туристические</p>
+                                            <span>Подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item6.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Консультация</h5>
-                                <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей
-                                    деятельности способствует подготовки и реализации новых предложений. </p>
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="block-item col-lg-4">
-                            <a href="#" class="block-item-img"
-                               style="background-image: url('img/items/item7.jpg');"></a>
-                            <div class="block-txt">
-                                <h5>Консультация</h5>
-                                <p>Не следует, однако забывать, что рамки и место обучения кадров требуют от нас анализа
-                                    новых предложений. Идейные соображения высшего порядка, а также сложившаяся
-                                    структура организации играет важную роль в формировании условий активизации.</p>
-                                <a href="#">Подробнее</a>
-                            </div>
+                        <div class="row row4">
+                            <a href="img/gallery2/photo-12-1.jpg" class="col-lg-12 row4-item" rel="group1" data-fancybox="image"
+                               data-caption="Здесь может быть описание...">
+                                <img src="img/gallery2/photo-12-1.jpg" alt="photo-12-1">
+                            </a>
                         </div>
                     </div>
-                    <div class="row">
-                        <ul class="gallery1">
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo1.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo1.jpg" alt="gallery1-1">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo2.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo2.jpg" alt="gallery1-2">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo3.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo3.jpg" alt="gallery1-3">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo4.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo4.jpg" alt="gallery1-4">
-                                </a>
-                            </li>
-                            <li class="col-lg-4">
-                                <a href="img/gallery1/photo5.jpg" rel="group1" data-fancybox="image"
-                                   data-caption="Здесь может быть описание...">
-                                    <img src="img/gallery1/photo5.jpg" alt="gallery1-5">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clients">
-                        <div class="content">
-                            <h3>Наши клиенты:</h3>
-                        </div>
-                        <img src="img/clients.png" alt="clients">
-                    </div>
+                    <ul class="pagination">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -287,3 +221,4 @@
 <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
+
