@@ -445,7 +445,17 @@ input[type="search"] {
       color: #fff; }
   .content-blockImg {
     padding: 40px 40px 1px 40px;
-    background: #e5e3df; }
+    background: #e5e3df;
+    position: relative; }
+    .content-blockImg::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: #e5e3df;
+      width: 200%;
+      margin-right: -200%; }
   .content-img {
     width: 100%;
     height: 355px;
@@ -456,7 +466,17 @@ input[type="search"] {
     margin-bottom: 30px; }
   .content-options {
     background: #f8f6f0;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    position: relative; }
+    .content-options::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 200%;
+      margin-right: -200%;
+      background: #f8f6f0; }
   .content-list {
     padding: 10px 70px 30px;
     background: #f8f6f0;
@@ -723,7 +743,17 @@ input[type="search"] {
 .info-company {
   display: table;
   background: #f8f6f0;
-  padding: 28px 15px 28px 0; }
+  padding: 28px 15px 28px 0;
+  position: relative; }
+  .info-company::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200%;
+    margin-right: -200%;
+    background: #f8f6f0; }
   .info-company p {
     font: 100% "OpenSans-Light", sans-serif;
     font-size: 18px;
