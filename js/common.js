@@ -6,6 +6,8 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 1,
         speed: 700,
+        autoplay: true,
+        autoplaySpeed: 5000,
     });
 
     //height service-top block====
@@ -17,7 +19,12 @@ $(document).ready(function() {
         });
     }item();
 
+    //burger animation
+    $('.burger').click(function(){
+        $('.burger__line').toggleClass('active-b');
+        $('.aside-tabs').slideToggle('slow');
 
+    });
     ///
     function item1(){
         $('.price').each(function () {
@@ -69,13 +76,6 @@ $(document).ready(function() {
         }
     });
 
-    //burger animation
-    $('.burger').click(function(){
-        $('.burger__line').toggleClass('active-b');
-        $('.menu').toggleClass('open');
-        $('.wrapper').toggleClass('bg-active');
-
-    });
 
     $('.gallery1 li a').fancybox({
         'loop': true,

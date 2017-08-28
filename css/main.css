@@ -319,16 +319,25 @@ input[type="search"] {
 
 .slider {
   position: relative;
-  margin-left: -32px; }
+  margin-left: -32px;
+  overflow: hidden; }
   .slider-item {
     width: 100%;
-    min-height: 445px;
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     position: relative;
     cursor: pointer; }
+    .slider-item:hover .slider-item-img {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+    .slider-item-img {
+      -webkit-transition: .3s linear;
+      -o-transition: .3s linear;
+      transition: .3s linear;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-height: 445px; }
     .slider-item::after {
       content: " ";
       position: absolute;
@@ -349,14 +358,14 @@ input[type="search"] {
       max-width: 50%; }
     .slider-item h1 {
       font-size: 33px;
+      position: absolute;
       line-height: 1;
       color: #fff;
       width: 50%;
       margin-left: auto;
-      padding-top: 75px;
+      top: 75px;
+      right: 30px;
       padding-left: 25px;
-      padding-right: 30px;
-      position: relative;
       z-index: 10; }
       .slider-item h1 span {
         font: 100% "OpenSans-Bold", sans-serif;
@@ -946,13 +955,28 @@ input[type="search"] {
     width: 100%;
     font: 100% "OpenSans-Semibold", sans-serif;
     position: relative; }
+    .news-img::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.15);
+      -webkit-transition: .2s linear;
+      -o-transition: .2s linear;
+      transition: .2s linear; }
     .news-img:hover {
       text-decoration: none; }
+      .news-img:hover::after {
+        background: transparent; }
     .news-img-title {
       font-size: 24px;
       color: #fff;
       padding-left: 15px;
-      padding-top: 25px; }
+      padding-top: 25px;
+      position: relative;
+      z-index: 2; }
     .news-img-date {
       font-size: 36px;
       color: #fff;
@@ -962,7 +986,8 @@ input[type="search"] {
       padding-left: 15px;
       position: absolute;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      z-index: 2; }
       .news-img-date::before {
         content: " ";
         position: absolute;
@@ -1337,6 +1362,51 @@ table {
     -o-transition: .3s linear;
     transition: .3s linear; }
 
+.burger {
+  margin: 13px 5px;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  right: 0;
+  top: 0; }
+  .burger__line {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #8dc63f;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease; }
+    .burger__line:nth-child(1) {
+      top: 0; }
+      .burger__line:nth-child(1).active-b {
+        display: none; }
+    .burger__line:nth-child(2) {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .burger__line:nth-child(2).active-b {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+    .burger__line:nth-child(3) {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .burger__line:nth-child(3).active-b {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+    .burger__line:nth-child(4) {
+      bottom: 0; }
+      .burger__line:nth-child(4).active-b {
+        display: none; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1400,6 +1470,10 @@ table {
 @media only screen and (max-width: 768px) {
   .aside-left {
     width: 50%; }
+  .burger {
+    display: block; }
+  .aside-tabs {
+    display: none; }
   .block-txt {
     min-height: 2px !important; }
   .block-txt a {
@@ -1468,7 +1542,7 @@ table {
     padding-bottom: 10px;
     font-size: 30px; }
   .slider-item h1 {
-    width: 100%;
+    width: 96%;
     font-size: 27px; }
   .slider-item p {
     font-size: 15px; }
@@ -1722,7 +1796,11 @@ table {
       width: 20px;
       height: 20px; }
   .downloadPrice::before {
-    display: block; } }
+    display: block; }
+  .slider-item-img {
+    min-height: 315px; }
+  .slider-item h1 {
+    top: 20px; } }
 
 /**/
 /* Custom, iPhone Retina */
