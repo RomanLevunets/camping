@@ -143,8 +143,7 @@ input[type="search"] {
 
 .aside-right {
   float: left;
-  width: 55%;
-  min-height: 245px; }
+  width: 55%; }
 
 .siteMenu {
   font: 100% "OpenSans-Light", sans-serif;
@@ -180,7 +179,8 @@ input[type="search"] {
 .mainMenu {
   font: 100% "OpenSans", sans-serif;
   font-size: 14px;
-  background: #e5e3df; }
+  background: #e5e3df;
+  min-height: 245px; }
   .mainMenu li.active a {
     font: 100% "OpenSans-Semibold", sans-serif;
     color: #8dc63f;
